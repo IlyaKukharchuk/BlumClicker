@@ -1,5 +1,8 @@
 # Blum Auto Clicker by Crypto Groove
-![софт работает](https://github.com/user-attachments/assets/5b7438b5-cd34-4f5e-b2e0-18f8df4c6ff6)
+
+<p align="center">
+  <img width="500" height="700" src="https://github.com/user-attachments/assets/5b7438b5-cd34-4f5e-b2e0-18f8df4c6ff6">
+</p>
 
 ## Описание
 Blum Auto Clicker - это утилита, которая помогает автоматизировать клики в приложении Blum.io. Кликер имитирует человеческие клики, что делает его использование безопасным и естественным, а также снижает риск блокировки аккаунта.
