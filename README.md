@@ -1,6 +1,5 @@
 # Blum Auto Clicker by Crypto Groove
-
-
+![софт работает](https://github.com/user-attachments/assets/5b7438b5-cd34-4f5e-b2e0-18f8df4c6ff6)
 
 ## Описание
 Blum Auto Clicker - это утилита, которая помогает автоматизировать клики в приложении Blum.io. Кликер имитирует человеческие клики, что делает его использование безопасным и естественным, а также снижает риск блокировки аккаунта.
@@ -13,11 +12,9 @@ Blum Auto Clicker - это утилита, которая помогает ав�
 
 ## Скриншоты
 ![главное окно](https://github.com/user-attachments/assets/151f07da-66ef-40c6-a205-45a24b1aef59)
-![инструкция](https://github.com/user-attachments/assets/6f9c100f-8895-420f-9dec-882b1af8c966)
 
-## Видео
+## Демонстрация работы скрипта
 ![Демонстрация работы скрипта](https://github.com/user-attachments/assets/c44f0f4b-cdd4-4e4a-b466-f4bff63df285)
-
 
 ## Установка
 1. Скачайте и установите приложение из репозитория.
@@ -46,24 +43,17 @@ Blum Auto Clicker - это утилита, которая помогает ав�
 - Чтобы приостановить или возобновить работу автокликера, используйте комбинацию клавиш Ctrl+Alt+S.
 
 ## Поддержка проекта
-Если вам нравится этот проект, вы можете поддержать меня, сделав донат на печенье:
+Если вам нравится этот проект 😊, вы можете поддержать меня, сделав донат на печеньки 🍪:
 
-### Bitcoin (BTC)
-- Адрес: `bc1qdnck6tg6fcdydurfx5h5c2wx0ackl34vx6xl8g`
-![Bitcoin QR](https://github.com/user-attachments/assets/0b9b429a-2a05-4eef-85e0-e8c91dc709d5)
+| Валюта       | Адрес                                                                                       | QR-код                                                                                                                                     |
+|--------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| **Bitcoin (BTC)** | `bc1qdnck6tg6fcdydurfx5h5c2wx0ackl34vx6xl8g`                                               | ![Bitcoin QR](https://github.com/user-attachments/assets/0b9b429a-2a05-4eef-85e0-e8c91dc709d5)                                             |
+| **Ethereum (ETH)** | `0x1df1F807148713de041c7d4015aA1e4079341deb`                                               | ![Ethereum QR](https://github.com/user-attachments/assets/8b5b1688-8891-4c24-99e8-3441531d622b)                                             |
+| **Toncoin (TON)** | `EQCMpjS0rqhf3O1GyWmCTAOF6kJhLoDbPE-ZZQbC7yoUFwk3`                                        | ![Toncoin QR](https://github.com/user-attachments/assets/d91e8a4b-4f2d-4d92-959b-444b5e2b5215)                                             |
+| **Tether (USDT) сеть TRC20** | `TTcp5iDQrZj2Xq9o3LCHxNubQxgi8GKtq5`                                                 | ![Tether (USDT) QR](https://github.com/user-attachments/assets/16abf07d-7ffc-4026-a1a3-b9f688fcc119)                                       |
 
-### Ethereum (ETH)
-- Адрес: `0x1df1F807148713de041c7d4015aA1e4079341deb`
-![Ethereum QR](https://github.com/user-attachments/assets/8b5b1688-8891-4c24-99e8-3441531d622b)
-
-### Toncoin (TON)
-- Адрес: `EQCMpjS0rqhf3O1GyWmCTAOF6kJhLoDbPE-ZZQbC7yoUFwk3`
-![Toncoin QR](https://github.com/user-attachments/assets/d91e8a4b-4f2d-4d92-959b-444b5e2b5215)
-
-### Tether (USDT) сеть TRC20
-- Адрес: `TTcp5iDQrZj2Xq9o3LCHxNubQxgi8GKtq5`
-![Tether (USDT) QR](https://github.com/user-attachments/assets/16abf07d-7ffc-4026-a1a3-b9f688fcc119)
 
 ---
 
-Скачайте Blum Auto Clicker и наслаждайтесь автоматизацией ваших кликов на Blum.io! Ваш Crypto Groove)
+Скачайте Blum Auto Clicker и наслаждайтесь автоматизацией ваших кликов на Blum.io! 
+Ваш Crypto Groove ❤
