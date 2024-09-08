@@ -97,7 +97,7 @@ class AutoClickerApp:
 
         text_widget = Text(instruction_window, wrap='word', font=("Helvetica", 10))
         text_widget.insert(END, instructions)
-        text_widget.tag_add("important", "10.0", "10.93")  # Adjust the range to cover the important text
+        text_widget.tag_add("important", "10.0", "10.93")
         text_widget.tag_config("important", foreground="red")
         text_widget.config(state='disabled')
         text_widget.pack(side="left", fill="both", expand=True)
@@ -208,10 +208,10 @@ class AutoClickerApp:
                         cx = int(M['m10'] / M['m00']) + self.roi[0]
                         cy = int(M['m01'] / M['m00']) + self.roi[1]
                         self.click_mouse(cx, cy+10)  # Добавление смещения, если необходимо
-                        time.sleep(random.uniform(0.01, 0.03))  # Случайная задержка между кликами
+                        time.sleep(random.uniform(0.01, 0.03))  # Случайная задержка между кликами (можно закомментировать эту строку, если хотите минимизировать клики по бомбам и собирать максимальное количество очков)
 
     def periodic_check(self):
-        check_interval = 10  # Проверка каждые 30 секунд
+        check_interval = 10  # Проверка каждые 10 секунд
         while self.running:
             if self.point:
                 self.check_and_click_point()
