@@ -118,7 +118,7 @@ Blum Auto Clicker - это утилита, которая помогает ав�
 |--------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | **Bitcoin (BTC)** | `bc1qdnck6tg6fcdydurfx5h5c2wx0ackl34vx6xl8g`                                               | <img width="200" height="250" src="https://github.com/user-attachments/assets/0b9b429a-2a05-4eef-85e0-e8c91dc709d5">                                             |
 | **Ethereum (ETH)** | `0x1df1F807148713de041c7d4015aA1e4079341deb`                                               | <img width="200" height="250" src="https://github.com/user-attachments/assets/8b5b1688-8891-4c24-99e8-3441531d622b">                                            |
-| **Toncoin (TON)** | `EQCMpjS0rqhf3O1GyWmCTAOF6kJhLoDbPE-ZZQbC7yoUFwk3`                                        | <img width="200" height="250" src="https://github.com/user-attachments/assets/d91e8a4b-4f2d-4d92-959b-444b5e2b5215">                                           |
+| **Toncoin (TON)** | `UQCMpjS0rqhf3O1GyWmCTAOF6kJhLoDbPE-ZZQbC7yoUF1Ty`                                        | <img width="200" height="250" src="https://github.com/user-attachments/assets/4cafc1b0-85f2-4fb4-ac62-26844a472ad8">                                         |
 | **Tether (USDT) сеть TRC20** | `TTcp5iDQrZj2Xq9o3LCHxNubQxgi8GKtq5`                                                 | <img width="200" height="250" src="https://github.com/user-attachments/assets/16abf07d-7ffc-4026-a1a3-b9f688fcc119">                                  |
 
 
