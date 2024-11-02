@@ -2,10 +2,6 @@ mss
 numpy
 opencv-python
 pyautogui
-tkinter
 pynput
-threading
-time
 keyboard
 pypiwin32
-random
