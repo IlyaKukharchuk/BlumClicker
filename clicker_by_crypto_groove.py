@@ -199,14 +199,14 @@ class AutoClickerApp:
                 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
                 
                 # Обычные зелёные снежинки
-                # lower_green = np.array([40, 100, 100])
-                # upper_green = np.array([80, 255, 255])
-                # mask = cv2.inRange(hsv, lower_green, upper_green)
+                lower_green = np.array([40, 100, 100])
+                upper_green = np.array([80, 255, 255])
+                mask = cv2.inRange(hsv, lower_green, upper_green)
 
                 # Ивент с тыквами
-                lower_orange = np.array([5, 80, 140])
-                upper_orange = np.array([20, 255, 255])
-                mask = cv2.inRange(hsv, lower_orange, upper_orange)
+                # lower_orange = np.array([5, 80, 140])
+                # upper_orange = np.array([20, 255, 255])
+                # mask = cv2.inRange(hsv, lower_orange, upper_orange)
 
                 contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
