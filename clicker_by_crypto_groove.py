@@ -198,15 +198,18 @@ class AutoClickerApp:
 
                 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
                 
-                # Обычные зелёные снежинки
+                # Green color range
                 lower_green = np.array([40, 100, 100])
                 upper_green = np.array([80, 255, 255])
-                mask = cv2.inRange(hsv, lower_green, upper_green)
-
-                # Ивент с тыквами
-                # lower_orange = np.array([5, 80, 140])
-                # upper_orange = np.array([20, 255, 255])
-                # mask = cv2.inRange(hsv, lower_orange, upper_orange)
+                mask_green = cv2.inRange(hsv, lower_green, upper_green)
+                
+                 # White color range
+                lower_white = np.array([0, 0, 253])
+                upper_white = np.array([179, 5, 255])
+                mask_white = cv2.inRange(hsv, lower_white, upper_white)
+                
+                # Combine masks
+                mask = cv2.bitwise_or(mask_green, mask_white)
 
                 contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -215,8 +218,8 @@ class AutoClickerApp:
                     if M['m00'] != 0:
                         cx = int(M['m10'] / M['m00']) + self.roi[0]
                         cy = int(M['m01'] / M['m00']) + self.roi[1]
-                        self.click_mouse(cx, cy+10)  # Добавление смещения, если необходимо
-                        time.sleep(random.uniform(0.01, 0.03))  # Случайная задержка между кликами (можно закомментировать эту строку, если хотите минимизировать клики по бомбам и собирать максимальное количество очков)
+                        self.click_mouse(cx, cy+10)  # Adding offset if needed
+                        time.sleep(random.uniform(0.01, 0.03))  # Random delay between clicks
 
     def periodic_check(self):
         check_interval = 10  # Проверка каждые 10 секунд
