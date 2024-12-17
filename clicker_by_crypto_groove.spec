@@ -21,7 +21,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='autoclicker_v3.0_by_crypto_groove',
+    name='clicker_by_crypto_groove',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -29,5 +29,5 @@ exe = EXE(
     upx_exclude=[],
     runtime_tmpdir=None,
     console=False,
-    icon='ball.ico'
+    icon='icon.ico'
 )

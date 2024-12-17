@@ -203,13 +203,16 @@ class AutoClickerApp:
                 upper_green = np.array([80, 255, 255])
                 mask_green = cv2.inRange(hsv, lower_green, upper_green)
                 
-                 # White color range
-                lower_white = np.array([0, 0, 253])
-                upper_white = np.array([179, 5, 255])
-                mask_white = cv2.inRange(hsv, lower_white, upper_white)
+                #  # White color range
+                # lower_white = np.array([0, 0, 253])
+                # upper_white = np.array([179, 5, 255])
+                # mask_white = cv2.inRange(hsv, lower_white, upper_white)
                 
-                # Combine masks
-                mask = cv2.bitwise_or(mask_green, mask_white)
+                # # Combine masks
+                # mask = cv2.bitwise_or(mask_green, mask_white)
+
+                mask = mask_green
+
 
                 contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
