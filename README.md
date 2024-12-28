@@ -1,5 +1,4 @@
-# Blum Auto Clicker Footbal Event ⚽
-Версия под футбольный ивент
+# Blum Auto Clicker
 
 Рекомендуемая область выделения:
 
