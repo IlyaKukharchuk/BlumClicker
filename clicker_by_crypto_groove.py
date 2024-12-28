@@ -22,13 +22,20 @@ class AutoClickerApp:
         self.setup_hotkeys()
         self.sct = mss()  # Создаем экземпляр mss 
 
+        # Определение цветов объектов
+        self.object_colors = {
+            "pink": ([147, 229, 0], [167, 255, 255]),  # розовый
+            "green": ([35, 158, 83], [68, 255, 255]),  # зеленый
+            "brown": ([7, 210, 69], [12, 255, 206]),  # коричневый
+        }
+
     def setup_ui(self):
         self.root.title("Blum Auto Clicker")
         self.root.geometry("350x500")
         self.root.resizable(False, False)
         
         # Заголовок
-        self.title_label = tk.Label(self.root, text="Blum Auto Clicker", font=("Helvetica", 16, "bold"))
+        self.title_label = tk.Label(self.root, text="Blum Auto Clicker", font=("Helvetica", 16, "bold"), fg="#983500")
         self.title_label.pack(pady=(20, 10))
 
         # Общий стиль для кнопок
@@ -97,7 +104,7 @@ class AutoClickerApp:
 
         text_widget = Text(instruction_window, wrap='word', font=("Helvetica", 10))
         text_widget.insert(END, instructions)
-        text_widget.tag_add("important", "10.0", "10.93")
+        text_widget.tag_add("important", "10.0", "10.93")  # Adjust the range to cover the important text
         text_widget.tag_config("important", foreground="red")
         text_widget.config(state='disabled')
         text_widget.pack(side="left", fill="both", expand=True)
@@ -197,35 +204,21 @@ class AutoClickerApp:
                 frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2BGR)
 
                 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-                
-                # Green color range
-                lower_green = np.array([40, 100, 100])
-                upper_green = np.array([80, 255, 255])
-                mask_green = cv2.inRange(hsv, lower_green, upper_green)
-                
-                #  # White color range
-                # lower_white = np.array([0, 0, 253])
-                # upper_white = np.array([179, 5, 255])
-                # mask_white = cv2.inRange(hsv, lower_white, upper_white)
-                
-                # # Combine masks
-                # mask = cv2.bitwise_or(mask_green, mask_white)
 
-                mask = mask_green
+                for object_name, (lower_color, upper_color) in self.object_colors.items():
+                    mask = cv2.inRange(hsv, np.array(lower_color), np.array(upper_color))
+                    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-
-                contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
-                for contour in contours:
-                    M = cv2.moments(contour)
-                    if M['m00'] != 0:
-                        cx = int(M['m10'] / M['m00']) + self.roi[0]
-                        cy = int(M['m01'] / M['m00']) + self.roi[1]
-                        self.click_mouse(cx, cy+10)  # Adding offset if needed
-                        time.sleep(random.uniform(0.01, 0.03))  # Random delay between clicks
+                    for contour in contours:
+                        M = cv2.moments(contour)
+                        if M['m00'] != 0:
+                            cx = int(M['m10'] / M['m00']) + self.roi[0]
+                            cy = int(M['m01'] / M['m00']) + self.roi[1]
+                            self.click_mouse(cx, cy + 10) #смещение
+                            time.sleep(random.uniform(0.005, 0.015))
 
     def periodic_check(self):
-        check_interval = 10  # Проверка каждые 10 секунд
+        check_interval = 3  # Проверка каждую секунду
         while self.running:
             if self.point:
                 self.check_and_click_point()

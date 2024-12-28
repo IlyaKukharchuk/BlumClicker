@@ -1,9 +1,10 @@
-# Blum Auto Clicker Footbal Event ⚽
-Версия под футбольный ивент
+# Blum Auto Clicker New Year (Сhristmas) Event 🎅
+Версия под новогодний ивент
 
 Рекомендуемая область выделения:
 
  <img width="200" height="370" src="https://github.com/user-attachments/assets/08047b86-12e7-40e5-9e81-2c56a22866fe">
+ <img width="200" height="370" src="https://github.com/user-attachments/assets/1bd4615e-8023-448a-9005-b7f30801b46b">
 
 
 ## Описание
