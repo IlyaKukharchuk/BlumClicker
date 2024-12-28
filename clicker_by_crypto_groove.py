@@ -215,7 +215,7 @@ class AutoClickerApp:
                             cx = int(M['m10'] / M['m00']) + self.roi[0]
                             cy = int(M['m01'] / M['m00']) + self.roi[1]
                             self.click_mouse(cx, cy + 10) #смещение
-                            time.sleep(random.uniform(0.005, 0.015))
+                            time.sleep(random.uniform(0.01, 0.03))
 
     def periodic_check(self):
         check_interval = 3  # Проверка каждую секунду
